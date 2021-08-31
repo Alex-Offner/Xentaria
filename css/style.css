@@ -1,0 +1,23 @@
+.index-body { 
+    background: url("../img/background-placeholder.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-div {
+      padding-top: 20%;
+      text-align: center;
+  }
+
+  #enter-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    
+  }
