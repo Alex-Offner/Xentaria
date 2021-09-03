@@ -10,21 +10,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
-.welcome-div {
-      /*centers div*/
-      padding-top: 20%;
-      text-align: center;
-  }
+#enter-button {
+    font-size: 10vh;
+    color: white;
+}
+
+#enter-button:hover {
+    color: black;
+}
 
 .main-body {
     display: flex;
     flex-direction: column;
     background-color: aqua;
+    justify-content: center;
+    align-items: center;
   }
 
-  header {
+p {
+    font-size: 2.5vh;
+    max-width: 75%;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 8vh;
+}
+
+h2 {
+    font-size: 6vh;
+    max-width: 75%;
+}
+
+h3 {
+    font-size: 3vh;
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,20 +60,21 @@
     padding: 1% 1%;
     z-index: 10;
     background: #5b639c;
+    margin-bottom: 2%;
     }
     
-    .logo {
+.logo {
         position: relative;
         width: 30%;
         justify-content: flex-start;
     }
     
-    .navigation {
+.navigation {
         display: flex;
         flex-wrap: nowrap;
     }
     
-    .navigation li {
+.navigation li {
         list-style: none;
         font-size: 300%;
         margin: 1%;
@@ -56,36 +82,36 @@
         width: 20%;
     }
     
-    .navigation li a {
+.navigation li a {
         color: #FFF;
         text-decoration: none;
         font-weight: 500;
         letter-spacing: 4px;
     }
-    
-    .navigation li a:hover {
+
+.navigation li a.active {
+        color: yellow;
+        border-width: 3px;
+        border-color: black;
+    }
+
+.navigation li a:hover {
         color: #000;
     }
 
-  .first-div {
+
+
+.first-div {
       padding: 12% 2% 1% 2%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
   }
 
 .welcome-xentaria {
     max-width: 100%;
-}
-
-.welcome-xentaria h1 {
-    color: #000;
-    font-size: 8em;
-}
-
-.welcome-xentaria p {
-    color: #000;
-    font-size: 4em;
+    text-align: center;
 }
 
 .welcome-xentaria .world-map {
@@ -95,10 +121,15 @@
 
 .content {
     max-width: 50%;
-    float: left;
+    display: inline-block;
+}
+
+.content p {
+    max-width: 95%;
 }
 
 .image {
+    margin-top: 3%;
     max-width: 50%;
     float: right;
 }
@@ -142,7 +173,7 @@
     text-align: center;
     color: #ccc;
     padding: 2% 0 5%;
-    height: 20%;
+    height: 28vh;
     font-size: 500%;
 }
 
@@ -179,3 +210,19 @@ close:focus {
         width: 100%;
     }
 }
+
+.first-div-listings {
+    padding: 12% 2% 1% 2%;
+    display: flex;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listings-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
