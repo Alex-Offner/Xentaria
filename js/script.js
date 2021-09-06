@@ -1,26 +1,9 @@
-// Get the modal
-var modal = document.getElementById("myModal");
+$('#mobnav-btn').click(
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("world-map");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-var body = document.getElementsByClassName("main-body");
-
-modalImg.onclick = function () {
-    modal.style.display = "none";
-}
+    function () {
+        $("html").toggleClass("mobile-menu-open");
+        $(".xnav-wrapper").delay(500).queue(function (reset_scroll) {
+            $(this).scrollTop(0);
+            reset_scroll();
+        });
+    });
