@@ -257,6 +257,9 @@ nav {
 
     .image-div {
         flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
     }
 
     .main-content {
@@ -264,6 +267,7 @@ nav {
     }
 
     .image-links-first-row {
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -273,6 +277,20 @@ nav {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .image-link {
+        max-width: 60vw;
+    }
+
+    .image-links-second-row-middle-buffer {
+        display: none;
+    }
+
+    .image-links-second-row-side-buffer {
+        display: none;
     }
 
   }
