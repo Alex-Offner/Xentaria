@@ -42,13 +42,20 @@ p {
       filter: brightness(120%);
   }
 
-  .nav-links a {
-      color: silver;
-      text-decoration: none;
-      letter-spacing: 2px;
-      font-size: bold;
+.nav-links a {
+    color: #AFAFAF;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: bold;
   }
 
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+.active-link a {
+    color:gray;
+}
   .logo-img {
     width: 10vh;
     margin-left: 20px;
@@ -67,10 +74,6 @@ p {
       margin: 5px;
       background-color: silver;
       transition: all 0.3s ease;
-  }
-
-  .active-link {
-
   }
 
   .overlay {
