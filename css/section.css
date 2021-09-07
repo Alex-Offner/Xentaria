@@ -168,6 +168,7 @@ nav {
     flex-wrap: wrap;
 }
 
+
 .image-links-first-row {
     display: inline-block;
     width: 33%;
@@ -245,8 +246,9 @@ nav {
           margin-left: 60vw;
       }
 
-      .listings-element p {
-        width: 60%;
+    .listings-element p {
+        width: 80%;
+        text-align: justify;
     }
 
     .region-img {
@@ -256,7 +258,23 @@ nav {
     .image-div {
         flex-direction: column;
     }
-  
+
+    .main-content {
+        text-align: center;
+    }
+
+    .image-links-first-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .image-links-second-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
   }
 
   .nav-active {
