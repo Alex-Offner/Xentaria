@@ -1,17 +1,28 @@
+html {
+    overflow: hidden;
+}
+
 .index-body {
     overflow: hidden;
 }
 
 #video-bg {
-    position: fixed;
+    position: absolute;
     z-index: -1;
     width: 100%;
     height: auto;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: fill;
 }
 
 .video-div {
     height: 800px;
     position: relative;
+    
 }
 
 .button {
@@ -51,6 +62,15 @@
     #video-bg {
         width: auto;
         height: 100%;
+        min-height: auto;
+    }
+
+    .index-body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
     }
 }
 

@@ -1,0 +1,211 @@
+body {
+    background-image: url("../img/paper-background.png");
+    background-repeat: repeat;
+    display: flex;
+    font-family: 'Merriweather', serif;
+    flex-direction: row;
+  }
+
+  h1 h2 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
+  nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      position: fixed;
+      z-index: 1;
+  }
+
+  .nav-links {
+      display: flex;
+      justify-content: right;
+      margin-right: 2vh;
+      margin-left: 35vw;
+  }
+
+  .nav-links li {
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      filter: brightness(120%);
+  }
+
+  .nav-links a {
+      color: silver;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: bold;
+  }
+
+  .logo-img {
+    width: 10vh;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+.burger {
+    display: none;
+    cursor: pointer;
+
+}
+
+  .burger div {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: silver;
+      transition: all 0.3s ease;
+  }
+
+  .active-link {
+
+  }
+
+  .overlay {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+  }
+
+  .main-content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+/* For the overlay to go over the maps in the region sections I needed to restructure the region.html and set the maps lower */
+.special-region-class {
+      z-index: -2;
+  }
+
+  .info-header {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -2;
+      color: white;
+  }
+
+  #history-img {
+    background-image: url('../img/history.jpg');
+    background-position: 50% 50%;
+  }
+
+  #religion-img {
+    background-image: url('../img/religion.jpg');
+    background-position: 60% 55%;
+  }
+  
+  #races-img {
+    background-image: url('../img/races.jpg');
+    background-position: 30% 50%;
+  }
+
+  #regions-img {
+    background-image: url('../img/regions.jpg');
+    background-position: 100% 50%;
+  }
+
+  #factions-img {
+    background-image: url('../img/factions.jpg');
+    background-position: 100% 30%;
+  }
+
+  .listings-element {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;;
+      width: 100%;
+      align-items: center;
+      margin-top: 10px;
+      line-height: 150%;
+  }
+
+  .listings-element h1 {
+      width: 50%;
+      display: flex;
+  }
+
+  .listings-element p {
+      width: 40%;
+  }
+
+  .region-img {
+      width: 40%;
+      z-index: -2;
+  }
+
+  @media screen and (max-width: 768px) {
+      body {
+          overflow-x: hidden;
+      }
+      .nav-links {
+          position: absolute;
+          right: 0px;
+          height: 120vh;
+          top: 8vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          transform: translate(200%);
+          transition: transform 0.5s ease-in;
+      }
+
+      .nav-links li {
+          margin: 15px;
+          opacity: 0;
+      }
+
+      .burger {
+          display: block;
+          margin-left: 60vw;
+      }
+
+      .listings-element p {
+        width: 60%;
+    }
+
+    .region-img {
+        width: 60%;
+    }
+  
+  }
+
+  .nav-active {
+      transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}

@@ -4,59 +4,82 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- sets the width of the page to follow the screen width and set inital zoom level -->
+
     <title>Xentaria - Enter</title>
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="main-body">
-    <header>
-        <a href="main.html" class='logo'><img src="img/Xentaria-logo.jpeg" class='img__shake logo'></a>
-        <ul class="navigation">
+<body>
+    <nav>
+        <div class="logo">
+            <a href="main.html"><img src="img/Xentaria-logo.jpeg" class="logo-img"></a>
+        </div>
+        <ul class="nav-links">
             <li><a href="main.html">Home</a></li>
-            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="timeline.html">History</a></li>
             <li><a href="religion.html">Religion</a></li>
-            <li><a class="active" href="races.html">Races</a></li>
+            <li><a class="active-link" href="races.html">Races</a></li>
             <li><a href="region.html">Regions</a></li>
             <li><a href="factions.html">Factions</a></li>
         </ul>
-    </header>
-    <div class="first-div-listings">
-        <div class="headline-div">
-            <h1>The Races of Xentaria</h1>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="overlay">
+        <img src="img/nav-bg-dark.png">
+    </div>
+    <div class="main-content">
+        <div class="info-header" id="races-img">
+            <h1>Races</h1>
         </div>
         <div class="listings-element">
             <p>
                 There are many different races living in Xentaria. If not otherwise stated, they follow the basic rules
-                and
-                descriptions of the books. You can have a look at them here:
-            </p>
-            <a href="https://www.dndbeyond.com/races" target="_blank">D&D Beyond Races</a>
-            <p>
+                and descriptions of the books. You can have a look at them here:
+                <br>
+                <br>
+                <a href="https://www.dndbeyond.com/races" target="_blank">D&D Beyond Races</a>
+                <br>
+                <br>
                 Because of the nature of the world however, many races have different origins, relationships to other
                 species or sometimes even different abilities. Some are rarer than others and less likely to be
-                travelers.
-                Others need consideration and consultation with the Dungeon Master. If not otherwise stated, all races
-                listed here are natural to this world and don’t necessarily come from different realms as may be
-                mentioned
-                in the official rules. Kalashtar, Gith, Simic Hybrid, Verdan and Locathah are not part of this world and
-                therefore not playable. The following pages will give a short description of the races, their place in
-                the
-                world and their most likely relationship to others.
+                travelers. Others need consideration and consultation with the Dungeon Master. If not otherwise stated,
+                all races listed here are natural to this world and don’t necessarily come from different realms as may
+                be mentioned in the official rules. Kalashtar, Gith, Simic Hybrid, Verdan and Locathah are not part of
+                this world and therefore not playable. The following pages will give a short description of the races,
+                their place in the world and their most likely relationship to others.
             </p>
-        </div>
-
-        <div class="listings-element">
-            <h3>HUMANS:</h2>
-                <p>
-                    Humans are probably the most common race in Xentaria. Their incredible ability to adapt to most
-                    climates makes them almost appear everywhere, except maybe in the deep oceans or the very high
-                    mountains. The most common place for humans to come from in Xentaria are either the Cascian Empire,
-                    Vultai or Iseria, but the continent of Madara or Dornoth are nearly equally as likely. Their variety
-                    in character and personality makes them work in every field.
-                </p>
+            <h3>Humans</h3>
+            <p>
+                Humans are probably the most common race in Xentaria. Their incredible ability to adapt to most climates
+                makes them almost appear everywhere, except maybe in the deep oceans or the very high mountains. The
+                most common place for humans to come from in Xentaria are either the Cascian Empire, Vultai or Iseria,
+                but the continent of Madara or Dornoth are nearly equally as likely. Their variety in character and
+                personality makes them work in every field.
+            </p>
+            <h3>Dwarves</h3>
+            <p>
+                Dwarves, while never seen in Karogon and rarely seen in Dornoth populate most of the world as well. They
+                tend to be tough and brave and love the deep roads. Most dwarves value loyalty very highly and have good
+                memories for those who break their trust. The capital of their people is Tarork and it is connected to
+                the ‘Way of the Depths’. While it is mostly in ruins, many dwarves still adventure down into this
+                gigantic tunnel network to look for long lost cities and treasure. Because the lust for riches and gold
+                is what unites all of the little people.
+                Dwarves hate Orcs and Genasi, so much so that some of them will challenge them to a duel if seen. While
+                there are loose peace treaties between the Orc tribes of Geddoz and Tarork, they will only go so far as
+                to prevent all out open war and it is not rare to see fighting between them. Especially if Orcs or
+                Genasi venture into the ‘Way of the Depths’.
+            </p>
         </div>
     </div>
     <script src="js/script.js"></script>
