@@ -4,77 +4,92 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- sets the width of the page to follow the screen width and set inital zoom level -->
+
     <title>Xentaria - Enter</title>
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="main-body">
-    <header>
-        <a href="main.html" class='logo'><img src="img/Xentaria-logo.jpeg" class='logo'></a>
-        <ul class="navigation">
-            <li><a class="active" href="main.html">Home</a></li>
-            <li><a href="timeline.html">Timeline</a></li>
+    <nav>
+        <div class="logo">
+            <a href="main.html"><img src="img/Xentaria-logo.jpeg" class="logo-img"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="active-link"><a href="main.html">Home</a></li>
+            <li><a href="timeline.html">History</a></li>
             <li><a href="religion.html">Religion</a></li>
             <li><a href="races.html">Races</a></li>
             <li><a href="region.html">Regions</a></li>
             <li><a href="factions.html">Factions</a></li>
         </ul>
-    </header>
-    <div class="first-div">
-        <div class="welcome-xentaria">
-            <div class="content">
-                <h1>Welcome to the World of Xentaria</h1>
-                <p>The world of Xentaria is a strange place full of mysteries, adventures and other things to be
-                    discovered.
-                    This webside will give you a short impression on the Timeline that shaped the world, the different
-                    gods
-                    that
-                    influence it, the races that inhabit it, as well as the regions and political parties that are
-                    relevant
-                    today. Feel free to explore and find a race that fits your character needs. To your right you can
-                    see
-                    the
-                    world map of Xentaria. The most important and well know places are shown here. Come back to see more
-                    regional maps in the future.</p>
-            </div>
-            <div class="image">
-                <img src="img/worldmap.jpg" alt="World Map" class="world-map" id="world-map">
-            </div>
-            <div class="image-div">
-                <!--Put some empty divs in for flexbox to align the items in a nice way-->
-                <div class="image-links-first-row">
-                    <a class="image-link" href="timeline.html"><img src="img/placeholder.jpg"></a>
-                    <h4>Timeline</h4>
-                </div>
-                <div class="image-links-first-row">
-                    <a class="image-link" href="Religion.html"><img src="img/placeholder.jpg"></a>
-                    <h4>Religion</h4>
-                </div>
-                <div class="image-links-first-row">
-                    <a class="image-link" href="races.html"><img src="img/placeholder.jpg"></a>
-                    <h4>Races</h4>
-                </div>
-                <div class="image-links-second-row-side-buffer">
-                </div>
-                <div class="image-links-second-row">
-                    <a class="image-link" href="region.html"><img src="img/placeholder.jpg"></a>
-                    <h4>Regions</h4>
-                </div>
-                <div class="image-links-second-row-middle-buffer">
-                </div>
-                <div class="image-links-second-row">
-                    <a class="image-link" href="factions.html"><img src="img/placeholder.jpg"></a>
-                    <h4>Factions</h4>
-                </div>
-                <div class="image-links-second-row-side-buffer">
-                </div>
-            </div>
-
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-
+    </nav>
+    <div class="overlay">
+        <img src="img/nav-bg.png">
+    </div>
+    <div class="main-content">
+        <div class="info-header" id="info-header-main">
+            <h1>Welcome to Xentaria</h1>
+        </div>
+        <div class="listings-element" id="listings-element-main">
+            <p>
+                The world of Xentaria is a strange place full of mysteries, adventures and other things to be
+                discovered.
+                This website will give you a short impression on the Timeline that shaped the world, the different
+                gods
+                that
+                influence it, the races that inhabit it, as well as the regions and political parties that are
+                relevant
+                today. Feel free to explore and find a race that fits your character needs. Further down you can
+                see
+                the
+                world map of Xentaria. The most important and well know places are shown here. Come back to see more
+                regional maps in the future.
+            </p>
+        </div>
+        <div class="image">
+            <img src="img/worldmap.jpg" alt="World Map" class="world-map" id="world-map">
+        </div>
+        <div class="image-div">
+            <!--Put some empty divs in for flexbox to align the items in a nice way-->
+            <div class="image-links-first-row">
+                <a class="image-link" href="timeline.html"><img src="img/placeholder.jpg"></a>
+                <h4>Timeline</h4>
+            </div>
+            <div class="image-links-first-row">
+                <a class="image-link" href="Religion.html"><img src="img/placeholder.jpg"></a>
+                <h4>Religion</h4>
+            </div>
+            <div class="image-links-first-row">
+                <a class="image-link" href="races.html"><img src="img/placeholder.jpg"></a>
+                <h4>Races</h4>
+            </div>
+            <div class="image-links-second-row-side-buffer">
+            </div>
+            <div class="image-links-second-row">
+                <a class="image-link" href="region.html"><img src="img/placeholder.jpg"></a>
+                <h4>Regions</h4>
+            </div>
+            <div class="image-links-second-row-middle-buffer">
+            </div>
+            <div class="image-links-second-row">
+                <a class="image-link" href="factions.html"><img src="img/placeholder.jpg"></a>
+                <h4>Factions</h4>
+            </div>
+            <div class="image-links-second-row-side-buffer">
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

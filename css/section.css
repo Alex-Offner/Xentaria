@@ -4,9 +4,14 @@ body {
     display: flex;
     font-family: 'Merriweather', serif;
     flex-direction: row;
-  }
+}
 
-  h1 h2 {
+.main-body {
+      background-color: black;
+      background-image: none;
+}
+
+h1 h2 {
     font-family: 'Averia Serif Libre', cursive;
     font-size: 30px;
 }
@@ -19,14 +24,14 @@ p {
     font-family: 'Merriweather', serif;
 }
 
-  nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      min-height: 8vh;
-      position: fixed;
-      z-index: 1;
-  }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    position: fixed;
+    z-index: 1;
+}
 
   .nav-links {
       display: flex;
@@ -103,6 +108,13 @@ p {
       color: white;
   }
 
+  #info-header-main {
+      letter-spacing: 7px;
+      height: 30vh;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+
   #history-img {
     background-image: url('../img/history.jpg');
     background-position: 50% 50%;
@@ -120,7 +132,7 @@ p {
 
   #regions-img {
     background-image: url('../img/regions.jpg');
-    background-position: 100% 50%;
+    background-position: 100% 45%;
   }
 
   #factions-img {
@@ -128,15 +140,70 @@ p {
     background-position: 100% 30%;
   }
 
-  .listings-element {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;;
-      width: 100%;
-      align-items: center;
-      margin-top: 10px;
-      line-height: 150%;
-  }
+.listings-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    line-height: 150%;
+}
+
+#listings-element-main {
+    color: white;
+}
+
+.world-map {
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-div {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-links-first-row {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.image-links-first-row h4 {
+    color: white;
+}
+
+.image-links-second-row {
+    display: inline-block;
+    width: 26%;
+    text-align: center;
+}
+
+.image-links-second-row h4 {
+    color: white;
+}
+
+.image-links-second-row-side-buffer {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.image-links-second-row-middle-buffer {
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+}
+
+
+.image-link:hover {
+    opacity: 0.7;
+}
 
   .listings-element h1 {
       width: 50%;
@@ -184,6 +251,10 @@ p {
 
     .region-img {
         width: 60%;
+    }
+
+    .image-div {
+        flex-direction: column;
     }
   
   }
