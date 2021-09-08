@@ -10,18 +10,12 @@ body {
       background-image: none;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: 'Averia Serif Libre', cursive;
     font-size: 30px;
 }
 
-h2 {
-    font-family: 'Averia Serif Libre', cursive;
-    font-size: 30px;
-}
-
-h3 {
-    font-family: 'Averia Serif Libre', cursive;
+h3, h4 {
     font-size: 20px;
 }
 
@@ -86,11 +80,15 @@ nav {
       transition: all 0.3s ease;
   }
 
-  .overlay {
-      position: fixed;
-      z-index: -1;
-      top: 0;
-  }
+.overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+#overlay-main {
+    position: absolute;
+}
 
   .main-content {
       display: flex;
@@ -164,6 +162,7 @@ nav {
 
 #listings-element-main {
     color: white;
+    text-align: center;
 }
 
 .special-note {
