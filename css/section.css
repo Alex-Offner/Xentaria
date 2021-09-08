@@ -10,7 +10,12 @@ body {
       background-image: none;
 }
 
-h1 h2 {
+h1 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 30px;
+}
+
+h2 {
     font-family: 'Averia Serif Libre', cursive;
     font-size: 30px;
 }
