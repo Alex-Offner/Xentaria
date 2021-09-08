@@ -32,19 +32,19 @@ nav {
     z-index: 1;
 }
 
-  .nav-links {
-      display: flex;
-      justify-content: right;
-      margin-right: 2vh;
-      margin-left: 35vw;
-  }
+.nav-links {
+    display: flex;
+    justify-content: right;
+    margin-right: 2vh;
+    margin-left: 35vw;
+}
 
-  .nav-links li {
-      list-style: none;
-      margin-left: 20px;
-      margin-right: 20px;
-      filter: brightness(120%);
-  }
+.nav-links li {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: brightness(120%);
+}
 
 .nav-links a {
     color: #AFAFAF;
@@ -60,11 +60,12 @@ nav {
 .active-link a {
     color:gray;
 }
-  .logo-img {
+
+.logo-img {
     width: 10vh;
     margin-left: 20px;
     margin-top: 5px;
-  }
+}
 
 .burger {
     display: none;
@@ -72,13 +73,68 @@ nav {
 
 }
 
-  .burger div {
-      width: 25px;
-      height: 3px;
-      margin: 5px;
-      background-color: silver;
-      transition: all 0.3s ease;
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: silver;
+    transition: all 0.3s ease;
+}
+
+.side-navbar {
+    background-color: aqua;
+    position: fixed;
+    top: 55%;
+    left: 7%;
+    width: auto;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    max-height: 30vh;
+    overflow-y: auto;
+
+}
+
+.side-navbar::-webkit-scrollbar {
+    width: 5px;
+    padding: 5px;
+}
+
+.side-navbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.side-navbar::-webkit-scrollbar-thumb {
+    background-color: black;
   }
+
+
+.side-navbar a {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    padding: 5px;
+}
+
+.side-navbar a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.side-navbar a:visited {
+    color: black;
+}
+
+.side-navbar a:hover {
+    opacity: 0.7;
+}
+
+#side-navbar-h {
+    font-size: 20px;
+}
 
 .overlay {
     position: fixed;
@@ -90,26 +146,27 @@ nav {
     position: absolute;
 }
 
-  .main-content {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-  }
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 /* For the overlay to go over the maps in the region sections I needed to restructure the region.html and set the maps lower */
 .special-region-class {
-      z-index: -2;
-  }
+    z-index: -2;
+}
 
-  .info-header {
-      width: 100%;
-      height: 50vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: -2;
-      color: white;
-  }
+.info-header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    color: white;
+}
 
   #info-header-main {
       letter-spacing: 7px;
@@ -263,6 +320,10 @@ nav {
       .burger {
           display: block;
           margin-left: 60vw;
+      }
+
+      .side-navbar {
+          display: none;
       }
 
     .listings-element p {
