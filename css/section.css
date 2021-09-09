@@ -116,7 +116,8 @@ nav {
 .side-navbar a {
     text-decoration: none;
     font-family: 'Merriweather', serif;
-    padding: 5px;
+    margin: 5px 0 5px 5px;
+    display: inline;
 }
 
 .side-navbar a:link {
@@ -134,6 +135,12 @@ nav {
 
 #side-navbar-h {
     font-size: 20px;
+    font-weight: bold;
+}
+
+#side-navbar-h2 {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .overlay {
