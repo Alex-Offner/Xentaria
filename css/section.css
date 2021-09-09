@@ -8,6 +8,12 @@ body {
 .main-body {
       background-color: #160e00;
       background-image: none;
+      overflow-x: hidden;
+}
+
+.main-body-mobile {
+    overflow-x: hidden;
+    position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -82,11 +88,10 @@ nav {
 }
 
 .side-navbar {
-    background-color: aqua;
     position: fixed;
-    top: 55%;
-    left: 7%;
-    width: auto;
+    top: 60%;
+    left: 0%;
+    width: 200px;
     height: auto;
     border-style: solid;
     border-width: 1px;
@@ -96,6 +101,8 @@ nav {
     color: black;
     max-height: 30vh;
     overflow-y: auto;
+    background-image: url("../img/naturalwhite.png");
+    background-repeat: repeat;
 
 }
 
@@ -117,7 +124,7 @@ nav {
     text-decoration: none;
     font-family: 'Merriweather', serif;
     margin: 5px 0 5px 5px;
-    display: inline;
+    display: inline-block;
 }
 
 .side-navbar a:link {
@@ -235,6 +242,8 @@ nav {
     border-color: black;
     border-width: 1px;
     padding: 5px;
+    background-image: url("../img/naturalwhite.png");
+    background-repeat: repeat;
 }
 
 .world-map {
@@ -249,6 +258,10 @@ nav {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.image-link {
+    width: 60%;
 }
 
 
@@ -289,8 +302,8 @@ nav {
     opacity: 0.7;
 }
 
-  .listings-element h1 h2 {
-      width: 50%;
+  .listings-element h1,h2 {
+      width: 40%;
       display: flex;
   }
 
@@ -303,7 +316,7 @@ nav {
       z-index: -2;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
       body {
           overflow-x: hidden;
       }
