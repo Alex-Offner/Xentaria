@@ -13,6 +13,8 @@ body {
 
 .main-body-mobile {
     overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     position: relative;
 }
 
@@ -489,7 +491,6 @@ nav {
   }
 
   }
-
 
 
   @keyframes navLinkFade {
