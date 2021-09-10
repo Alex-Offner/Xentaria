@@ -11,12 +11,6 @@ body {
       overflow-x: hidden;
 }
 
-/* .main-body-mobile {
-    overflow-x: hidden;
-    /* overflow-y: scroll; */
-    /* position: relative; */
-}  */
-
 h1, h2, h3, h4 {
     font-family: 'Averia Serif Libre', cursive;
     font-size: 30px;
@@ -488,6 +482,12 @@ nav {
   .modal-content {
       max-width: 80%;
   }
+
+  .main-body-mobile {
+      overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* position: relative; */
+} 
 
   }
 
