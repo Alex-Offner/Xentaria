@@ -284,8 +284,6 @@ nav {
 .special-note {
     font-style: italic;
     font-size: 90%;
-    /* border-style: solid;
-    border-color: black; */
     border-width: 1px;
     margin: 20px 50px;
     padding: 20px 30px;
@@ -299,6 +297,16 @@ nav {
     max-height: 100%;
 }
 
+.image {
+    text-align: center;
+    margin-top: 20px;
+    width: 40%;
+    height: 40%;
+}
+
+.cascian-empire {
+    width: 100%;
+}
 
 .modal-button {
     position: relative;
@@ -316,11 +324,26 @@ nav {
 
 }
 
+.modal-button-empire {
+    position: static;
+    color: black;
+    border: 2px solid black;
+}
+
+.image button:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.4s ease 0s;
+    border: 2px solid white;
+    opacity: 0.7;
+}
+
 .modal-button:hover {
     color: black;
     background-color: white;
 	transition: all 0.4s ease 0s;
     border: 2px solid black;
+    opacity: 0.7;
 }
 
 .modal {
@@ -523,6 +546,14 @@ nav {
     }
 
     .region-img {
+        width: 80%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .cascian-empire {
         width: 80%;
     }
 
