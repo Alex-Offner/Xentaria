@@ -300,6 +300,7 @@ nav {
 .image {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 40%;
     height: 40%;
 }
@@ -464,11 +465,13 @@ nav {
   .listings-element p {
       width: 40%;
       text-align: justify;
+      margin-top: -5px;
   }
 
   .region-img {
       width: 40%;
       z-index: -2;
+      margin-bottom: 20px;
   }
 
   .chapter-arrows {
