@@ -52,7 +52,7 @@ nav {
     display: flex;
     justify-content: right;
     margin-right: 2vh;
-    margin-left: 35vw;
+    margin-left: 32vw;
 }
 
 .nav-links li {
@@ -83,7 +83,7 @@ nav {
 }
 
 .logo-img {
-    width: 10vh;
+    width: 15vw;
     margin-left: 20px;
     margin-top: 5px;
 }
@@ -117,9 +117,11 @@ nav {
     max-height: 30vh;
     overflow-y: auto;
     background-color: rgba(0,0,0,0.1);
-    /* background-image: url("../img/naturalwhite.png");
-    background-repeat: repeat; */
 
+}
+
+.side-navbar p {
+    margin-bottom: 5px;
 }
 
 .side-navbar::-webkit-scrollbar {
@@ -215,6 +217,7 @@ nav {
       height: 30vh;
       flex-direction: column;
       justify-content: flex-end;
+      margin-bottom: 30px;
   }
 
   #history-img {
@@ -278,7 +281,10 @@ nav {
 
 .listings-element-main p {
     text-align: center;
-    width: 50%;
+    width: 65%;
+    line-height: 1.9em;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .special-note {
@@ -311,17 +317,19 @@ nav {
 
 .modal-button {
     position: relative;
-    right: -85%;
+    right: calc(-50% + 100px);
     bottom: 22%;
     color: white;
     background-color: transparent;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 10px;
+	padding: 10px 15px;
 	border: 2px solid white;
 	display: inline-block;
 	transition: all 0.4s ease 0s;
     font-family: 'Merriweather', serif;
+    letter-spacing: 4px;
+    width: 200px;
 
 }
 
@@ -407,6 +415,7 @@ nav {
 
 .image-div {
     margin-top: 5%;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -415,6 +424,10 @@ nav {
 
 .image-link {
     width: 25vw;
+}
+
+.image-div h4 {
+    margin-top: 0;
 }
 
 
@@ -465,7 +478,7 @@ nav {
   .listings-element p {
       width: 40%;
       text-align: justify;
-      margin-top: -5px;
+      margin-top: 0;
   }
 
   .region-img {
@@ -478,6 +491,8 @@ nav {
       display: flex;
       justify-content: center;
       text-align: center;
+      margin-top: 40px;
+      margin-bottom: 120px;
   }
 
   .chapter-arrows p {
@@ -497,6 +512,17 @@ nav {
       position: absolute;
       right: 30%;
   }
+
+footer {
+    background-color: #160e00;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer p {
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    font-size: 0.8em;
+}
 
   @media screen and (max-width: 850px) {
       body {
@@ -532,7 +558,7 @@ nav {
 
       .burger {
           display: block;
-          margin-left: 80vw;
+          margin-left: 60vw;
       }
 
       .side-navbar {
@@ -541,11 +567,19 @@ nav {
 
     #info-header-main {
         margin-top: 50px;
-    } 
+    }
+
+    .logo-img {
+        width: 25vw;
+    }
 
     .listings-element p {
         width: 80%;
         text-align: justify;
+    }
+
+    .listings-element-main p {
+        width: 80%;
     }
 
     .region-img {
@@ -639,26 +673,33 @@ nav {
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1220px) {
     .nav-links {
         margin-left: 20vw;
     }
 
-    .modal-button {
-        right: -80%;
+    /* .modal-button {
+        right: -40%;
+    } */
+
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        margin-left: 10vw;
     }
 
 }
 
 @media screen and (max-width: 600px) {
     .burger {
-        margin-left: 75vw;
+        margin-left: 55vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     .burger {
-        margin-left: 70vw;
+        margin-left: 50vw;
     }
 
     .left-arrow {
@@ -672,7 +713,7 @@ nav {
 
 @media screen and (max-width: 400px) {
     .burger {
-        margin-left: 60vw;
+        margin-left: 50vw;
     }
 
     .left-arrow {

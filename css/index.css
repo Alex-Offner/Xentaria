@@ -32,7 +32,7 @@ html {
     font-family: 'Merriweather', serif;
     opacity: 0.5;
     text-decoration: none;
-    padding: 5px 3px;
+    padding: 15px 10px;
     border: solid #C0C0C0;
     border-width: 1px;
     width: 10%;
@@ -40,6 +40,13 @@ html {
     top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+    transition: all 1s ease;
+}
+
+.button:hover {
+    background-color: #C0C0C0;
+    color: black;
 }
 
 #xentaria-banner {
