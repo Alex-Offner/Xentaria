@@ -1,0 +1,107 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+html {
+    overflow: hidden;
+}
+
+.index-body {
+    overflow: hidden;
+}
+
+#video-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -o-object-fit: fill;
+       object-fit: fill;
+}
+
+.video-div {
+    height: 800px;
+    position: relative;
+    
+}
+
+.button {
+    text-align: center;
+    color: #C0C0C0;
+    font: 16px;
+    font-family: 'Merriweather', serif;
+    opacity: 0.5;
+    text-decoration: none;
+    padding: 15px 10px;
+    border: solid #C0C0C0;
+    border-width: 1px;
+    width: 10%;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.button:hover {
+    background-color: #C0C0C0;
+    color: black;
+}
+
+#xentaria-banner {
+    width: 40%;
+    opacity: 0.6;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #video-bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #video-bg {
+        width: auto;
+        height: 100%;
+        min-height: auto;
+    }
+
+    .index-body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #xentaria-banner {
+        top: 30%;
+    }
+
+    .button {
+        width: 25%;
+    }
+  }
